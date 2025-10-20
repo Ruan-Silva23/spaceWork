@@ -1,0 +1,311 @@
+:root {
+    --main-color: #2d93fa;
+    --black: #13131A;
+    --bg: #010103;
+    --purple: rgb(120, 21, 250);
+    --border: 0.5rem solid rgba(255,255,244,0.3);
+    font-size: 10px;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: initial;
+    transition: 0.2s linear;
+  }
+
+  body {
+    background-color: var(--bg);
+    padding-top: 145px;
+
+  }
+
+  section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .logo img{
+   width: 80%;
+   height: auto;
+  }
+
+  .logo img:hover {
+    width: 100%;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 145px;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+  }
+
+  .header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+  }
+
+.navbarra a {
+    margin: 0 1.3rem;
+    font-size: 4rem;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.navbarra a:hover{
+    color: var(--main-color);
+    border-bottom: 0.5rem solid var(--main-color);
+    padding-bottom: 0.1rem;
+    font-size: 4.5rem;
+}
+
+.icons img:hover {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: #000000;
+    padding: 0.6rem 2.5rem;
+    font-size: 3.5rem;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  120% {
+    transform: scale(1);
+  }
+}
+
+.btn-card {
+    background-color: var(--main-color);
+    color: #000000;
+    padding: 0.6rem 2.5rem;
+    font-size: 3.5rem;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    margin-bottom: 1.2rem;
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.btn-card:hover{
+  letter-spacing: 0.5rem;
+}
+
+.home-container{
+    background: url("./imagens/5090-rog.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.content {
+  max-width: 60rem;
+}
+
+.content h3 { 
+  color: #fff;
+  font-size: 6rem;
+ 
+}
+
+.content p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.title {
+  
+padding-top: 145px;
+  font-size: 8rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.6rem;
+}
+
+.title span {
+  color: var(--purple);
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  gap: 1,5rem;
+}
+
+.about img {
+  width: 600px;
+  height: 480px;
+}
+
+.about .row .content{
+  padding: 2rem;
+}
+
+.about .row .content h3{ 
+  font-size: 4rem;
+  color: #fff;
+}
+
+.about .row .content p{ 
+  font-size: 2.3rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box {
+  height: 18rem;
+  width: 120;
+  object-fit: contain;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: var(--border);
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu .box-container .box:hover {
+  background-color: var(--purple)
+}
+
+.menu .box-container .box img {
+  height: 18rem;
+  margin: 1.5rem;
+
+}
+
+.menu .box-container .box h3 {
+  color: #fff;
+  font-size: 3.8rem;
+  padding: 1rem 0;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.4rem;
+}
+
+.menu .box-container .box .stars { 
+  color: #fff;
+  font-size: 2.5rem ; 
+}
+
+.ofertas .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
+  gap: 1.5rem;
+}
+
+.ofertas .box-container .ofertas {
+  height: 18rem;
+  width: 120;
+  object-fit: contain;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: var(--border);
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem ;
+  cursor: pointer;
+}
+
+.ofertas .box-container .ofertas:hover{
+  background-color: var(--purple);
+}
+
+.ofertas .box-container .ofertas img {
+  height: 18rem;
+  margin: 1.5rem;
+}
+
+.ofertas .box-container .price {
+   color: #fff;
+  font-size: 2.5rem ; 
+}
+
+.ofertas .box-container .price span {
+  font-size: 1.8rem ;
+  text-decoration: line-through;
+  font-weight:lighter ;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+   text-align: center;
+   align-items: center;
+}
+
+.footer .share {
+  padding: 1rem;
+}
+
+.footer .share img {
+  margin: 0.3;
+  border: radius 50%;
+  padding: 1rem;
+}
+
+.footer .share img:hover {
+    cursor: pointer;
+    background-color: var(--purple);
+}
