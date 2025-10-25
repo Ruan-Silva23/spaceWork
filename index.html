@@ -13,7 +13,6 @@
 <body>
 
     <header class="header">
-        <section>
 
         <a href="#" class="logo">
             <img src="logo-pag.png" alt="logo">
@@ -21,21 +20,28 @@
 
         <nav class="navbarra"> 
             <a href="#">Home</a>
-            <a href="#ofertas"> Ofertas</a>
+            <a href="#ofertas">Ofertas</a>
             <a href="#marcas">marcas</a>
             <a href="#about">Sobre</a>
             <a href="#address">Endereço</a>
+            <a href="#contato">Contato</a>
         </nav>
 
         <div class="icons">
 
             <img width="50" height="50" src="lupa.png" alt="Lupa">
             
-            <img width="50" height="50" src="cart.png" alt="Carrinho">
-
+            <img width="50" height="50" src="cart.png" alt="Carrinho">    
+        
         </div>
 
-        </section>
+        <nav class="login"> 
+
+            <a href="#login">Login</a> 
+            <img width="50" height="49.4" src="user.png" alt="img user"/>
+        
+        </nav>
+        
     </header>
 
     <div class="home-container">
@@ -183,6 +189,45 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d347.6005454768594!2d-35.90349257700434!3d-7.24398582439372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1760212065466!5m2!1sen!2sbr" width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
+
+    <section class="formulario" id="contato">
+  <h2 class="title">Fale <span>Conosco</span> </h2>
+
+  <form action="#" method="post" class="form-box">
+    <div class="input-group">
+      <label  for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+
+    <div class="input-group">
+      <label for="assunto">Assunto:</label>
+      <select id="assunto" name="assunto" required>
+        <option class="option" value="">Selecione</option>
+        <option class="option" value="suporte">Suporte Técnico</option>
+        <option class="option" value="parcerias">Parcerias</option>
+        <option class="option" value="sugestao">Sugestão</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+    </div>
+
+    <fieldset>
+        <div class="input-check"> 
+            <input type="checkbox" name="check-email"  id="iemail" checked> <Label for="iemail" >Você gostaria de receber atualizações de nossas ofertas no E-mail </Label>
+        </div>
+    </fieldset>
+
+    <button type="submit" class="btn-card">Enviar</button>
+  </form>
+</section>
 
     <section class="footer">
         <div class="share">
