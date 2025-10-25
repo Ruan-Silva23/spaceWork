@@ -1,3 +1,4 @@
+ /* Criação de variaveis */
 :root {
     --main-color: #2d93fa;
     --black: #13131A;
@@ -7,6 +8,7 @@
     font-size: 10px;
     }
 
+  /* configs gerais */
 * {
     margin: 0;
     padding: 0;
@@ -17,17 +19,18 @@
     transition: 0.2s linear;
   }
 
+  /* imagem de back da pag */
   body {
   background-image: url(imagens/Galaxia\ backg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  padding-top: 145px;
   position: relative;
   overflow-x: hidden;
   }
 
+  /* Espaçamento das box */
   section {
     padding: 3rem 2rem;
     margin: 0 auto;
@@ -53,6 +56,7 @@
     height: 60px;
 }
 
+/* posicionamento e configs do header */
 .header {
   position: fixed;
   top: 0;
@@ -77,6 +81,7 @@
   margin-right: 50rem;
 }
 
+/* configs do botão login */
 .login a {
   font-size: 4rem;
   letter-spacing: 0.3rem;
@@ -105,6 +110,7 @@
   cursor: pointer;
 }
 
+/* configs dos textos na barra de navegação */
 .navbarra a {
     margin: 0 1.3rem;
     font-size: 4rem;
@@ -129,6 +135,7 @@
     height: 60px;
 }
 
+/* Configs do botão da pag inicial */
 .btn {
     background: linear-gradient(135deg, var(--main-color), var(--purple));
     color: #000000;
@@ -142,6 +149,7 @@
     animation: pulse 2s infinite ease-in-out
 }
 
+/* animação de pulse no botão inicial */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -154,6 +162,7 @@
   }
 }
 
+/* configs dos botões das boxes do site */
 .btn-card {
     color: #000000;
     padding: 0.6rem 2.5rem;
@@ -175,42 +184,63 @@
   letter-spacing: 0.2rem;
 }
 
+/* imagem principal do site */
 .home-container {
-    background: url("./imagens/5090-rog.jpg") center/cover no-repeat;
-    height: 81vh;
-    background-position: center;
-    background-size: cover;
-    animation: zoomIn 6s ease-in-out infinite alternate;
+  background: url("./imagens/5090-rog.jpg") center/cover no-repeat;
+  margin-top: 145px;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;         
+  justify-content: flex-start;
+  animation: zoomIn 6s ease-in-out infinite alternate;
+  padding: 0 8vw;             
 }
 
+/* efeito de Zoom constante na imagem */
 @keyframes zoomIn {
   from { background-size: 100%; }
   to { background-size: 110%; }
 }
 
-.home-container section {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-}
-
+/* alinhamento do conteúdo */
 .content {
   max-width: 60rem;
+  width: 100%;
+  text-align: left;
 }
 
+/* título */
 .content h3 { 
   color: #fff;
-  font-size: 6rem;
- 
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
 }
 
+/* conteudo */
 .content p {
   color: #fff;
-  font-size: 2rem;
-  line-height: 1.5;
+  font-size: clamp(1.4rem, 2vw, 2rem); 
+  line-height: 1.6;
   padding: 1rem 0;
+  max-width: 55ch;
+  margin: 0; 
 }
 
+/* " Responsividade " */
+@media (min-width: 600px) {
+  .home-container {
+    min-height: 80vh;
+    background-position: top center;
+    padding: 0 4vw;
+  }
+
+  .content {
+    text-align: left;
+  }
+}
+
+/* titulos de paginas */
 .title {
 padding-top: 145px;
   font-size: 8rem;
@@ -223,6 +253,7 @@ padding-top: 145px;
   letter-spacing: 0.6rem;
 }
 
+/* Titulos de paginas */
 .title span {
   color: var(--purple);
   text-transform: uppercase;
@@ -230,6 +261,7 @@ padding-top: 145px;
   text-shadow: 0 0 20px rgba(120,21,250,0.6);
 }
 
+/* sobre nós */
 .about .row {
   display: flex;
   align-items: center;
@@ -259,6 +291,7 @@ padding-top: 145px;
   line-height: 1.8;
 }
 
+/* configurações das box de compra*/
 .menu .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
@@ -306,6 +339,7 @@ padding-top: 145px;
   font-size: 2.5rem ; 
 }
 
+/* configs de box de ofertas */
 .ofertas .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
@@ -354,12 +388,14 @@ padding-top: 145px;
   font-weight:lighter ;
 }
 
+/* endereço */
 .address {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+/* inicio do formulario */
 .formulario {
   background: rgba(10, 10, 20, 0.9);
   border: 1px solid rgba(120,21,250,0.4);
@@ -413,6 +449,7 @@ padding-top: 145px;
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* opções pre programadas para a aba de assunto */
 .option {
   color: rgb(0, 0, 0);
   background: rgb(0, 92, 168);
@@ -441,6 +478,8 @@ button[type="submit"] {
   align-self: center;
   margin-top: 2rem;
 }
+
+/* config dos icons de contato*/
 
 .footer {
    text-align: center;

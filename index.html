@@ -8,17 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="Java/script.js"></script>
     <title> Dominium GPU </title>
 </head>
 <body>
-
-    <header class="header">
-
-        <a href="#" class="logo">
-            <img src="logo-pag.png" alt="logo">
-        </a>
-
-        <nav class="navbarra"> 
+    <!-- Barra de navegação no topo do site -->
+    <header class="header">   
+        <a href="#" class="logo"><img src="logo-pag.png" alt="logo"> </a> 
+        <!-- links da barra para melhor navegação -->    
+        <nav class="navbarra">
             <a href="#">Home</a>
             <a href="#ofertas">Ofertas</a>
             <a href="#marcas">marcas</a>
@@ -26,7 +24,7 @@
             <a href="#address">Endereço</a>
             <a href="#contato">Contato</a>
         </nav>
-
+        <!-- icones de carrinho e lupa -->
         <div class="icons">
 
             <img width="50" height="50" src="lupa.png" alt="Lupa">
@@ -34,7 +32,7 @@
             <img width="50" height="50" src="cart.png" alt="Carrinho">    
         
         </div>
-
+        <!-- Botão de login e icon de user -->
         <nav class="login"> 
 
             <a href="#login">Login</a> 
@@ -43,30 +41,29 @@
         </nav>
         
     </header>
-
+    <main class="hero"></main>
+    <!-- pag inicial do site -->
     <div class="home-container">
-        <section id="#home">
             <div class="content">
                 
                 <h3>Tenha as melhores placas da atualidade</h3>
                 <p>Compre modelos exlusivos e raros em nossa loja, possuimos todos os melhores e mais bonitos hardware do mercado</p>
 
-                <a href="#" class="btn">OBTENHA A SUA AGORA</a>
+                <button onclick="final()" class="btn-card">Obtenha a sua agora</button>
                 </div>
-        
-        </section>
-    </div>
 
+    </div>
+    <!-- title de oferta -->
     <section class="ofertas" id="ofertas">
         <h2 class="title">ofertas<span> do mês</span></h2>
-
+        <!-- box's de ofertas -->
         <div class="box-container">
             <div class="ofertas">
             <img src="css/imagens/Paorus.jpg" alt="Placa de video RTX AORUS 4070 TI">
                 <h3>AORUS <p>RTX 4070 TI</p></h3>
 
                 <div class="price">R$: R$4.749,99 - <span> R$ 4,999,71</span> <p></p>
-                <a href="" class="btn-card">Comprar</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
             </div>
 
@@ -76,7 +73,7 @@
                 <h3>GALAX<p>RTX 4080 SUPER</p></h3>
 
                 <div class="price">R$: 10.238,00 - <span> R$ 11.299,94</span><p></p>
-                <a href="" class="btn-card"> Comprar</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
             </div>
 
@@ -86,16 +83,16 @@
                 <h3>ZOTAC <p>RTX 5060 TI</p></h3>
                 
                 <div class="price">R$: 3.499,99 - <span> R$ 3,780,87</span><p></p>
-                <a href="" class="btn-card">Comprar</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
             </div>
         </div>
 
     </section>
-
+    <!-- title de menu -->
     <section class="menu" id="marcas">
         <h2 class="title"> nosso <span>menu</span></h2>
-
+        <!-- box's de menu -->
         <div class="box-container">
             
             <div class="box">
@@ -104,7 +101,7 @@
                 <h3>ASUS</h3>
                 
                 <div class="stars">Avaliação: 4,2 <p>⭐⭐⭐⭐✩</p>
-                <a href="" class="btn-card">Ver produtos</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
 
             </div>
@@ -115,7 +112,7 @@
                 <h3>AORUS</h3>
                 
                 <div class="stars">Avaliação: 4,4 <p>⭐⭐⭐⭐★</p>
-                <a href="" class="btn-card">Ver produtos</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
 
          </div>
@@ -126,7 +123,7 @@
                 <h3>MSI</h3>
                 
                 <div class="stars">Avaliação: 4,5 <p>⭐⭐⭐⭐★</p>
-                <a href="" class="btn-card">Ver produtos</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
 
          </div>
@@ -137,7 +134,7 @@
                 <h3>GALAX</h3>
                 
                 <div class="stars">Avaliação: 4,2 <p>⭐⭐⭐⭐✩</p>
-                <a href="" class="btn-card">Ver produtos</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
 
          </div>
@@ -148,7 +145,7 @@
                 <h3>EVGA</h3>
                 
                 <div class="stars">Avaliação: 4,5 <p>⭐⭐⭐⭐★</p>
-                <a href="" class="btn-card">Ver produtos</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
 
          </div>
@@ -159,7 +156,7 @@
                 <h3>ZOTAC</h3>
                 
                 <div class="stars">Avaliação: 4,0 <p>⭐⭐⭐⭐✩</p>
-                <a href="" class="btn-card">Ver produtos</a>
+                <button onclick="final()" class="btn-card">Comprar</button>
                 </div>
 
          </div>
@@ -168,7 +165,7 @@
 
         
     </section>
-
+    <!-- title sobre nós -->
     <section class="about" id="about">
         <h2 class="title">SOBRE <span>NÓS</span></h2>
         <div class="row"> 
@@ -182,18 +179,19 @@
 
         </div>
     </section>
-
+    <!-- title de endereço -->
     <section class="address" id="address">
         <h2 class="title">Nosso <span>Endereço</span> </h2>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d347.6005454768594!2d-35.90349257700434!3d-7.24398582439372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1760212065466!5m2!1sen!2sbr" width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
-
+    <!-- Formulario do fale conosco -->
     <section class="formulario" id="contato">
   <h2 class="title">Fale <span>Conosco</span> </h2>
 
   <form action="#" method="post" class="form-box">
+     <!-- criação dos labels -->
     <div class="input-group">
       <label  for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -207,12 +205,17 @@
     <div class="input-group">
       <label for="assunto">Assunto:</label>
       <select id="assunto" name="assunto" required>
+        <!-- opções para escolha -->
         <option class="option" value="">Selecione</option>
+        <option class="option" value="sugestao">Comprar</option>
         <option class="option" value="suporte">Suporte Técnico</option>
         <option class="option" value="parcerias">Parcerias</option>
         <option class="option" value="sugestao">Sugestão</option>
-      </select>
+
+        
+        </select>
     </div>
+
 
     <div class="input-group">
       <label for="mensagem">Mensagem:</label>
@@ -220,15 +223,17 @@
     </div>
 
     <fieldset>
+        <!-- checkbox para msg no Email -->
         <div class="input-check"> 
             <input type="checkbox" name="check-email"  id="iemail" checked> <Label for="iemail" >Você gostaria de receber atualizações de nossas ofertas no E-mail </Label>
         </div>
     </fieldset>
 
-    <button type="submit" class="btn-card">Enviar</button>
+    <button onclick="final()" type="submit" class="btn-card">Comprar</button>
   </form>
 </section>
 
+    <!-- icons de instagram e facebock-->
     <section class="footer">
         <div class="share">
             <img width="54" height="54" src="https://img.icons8.com/3d-fluency/94/instagram-logo.png" alt="instagram-logo"/>
